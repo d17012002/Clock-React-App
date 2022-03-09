@@ -3,7 +3,6 @@ import Footer from "./Footer"
 
 function App() {
   const [time, updateTime] = useState(new Date().toLocaleTimeString());
-  console.log(time);
   
   function update(){
     updateTime(new Date().toLocaleTimeString());
@@ -14,8 +13,6 @@ function App() {
   let date = d.getDate();
   let month = d.getMonth();
   let year = d.getFullYear();
-
-  console.log(year);
 
   return (
     <div className="container">
